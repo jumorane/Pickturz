@@ -33,6 +33,9 @@ form{
   margin: 30px auto 10px;
   text-align: center;
 }
+
+
+
 label{
   display: block;
   width: 30px;
@@ -45,6 +48,7 @@ label{
   font-weight: bold;
   font-size: 24px;
 }
+
 label input{
   height: 0;
   width: 0;
