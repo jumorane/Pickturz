@@ -6,9 +6,10 @@
   --error: #f53030;
 }
 
-body{
+body {
   font-family: "Playfair Display";
   color: var(--secondary);
+  
 }
 .App{
   max-width: 960px;

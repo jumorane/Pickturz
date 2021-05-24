@@ -3,9 +3,12 @@ import Title from './comps/Titre';
 
 function App() {
   return (
+    
     <div className="App">
       <Title/>
+
     </div>
+
   );
 }
 

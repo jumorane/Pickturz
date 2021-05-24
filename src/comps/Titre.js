@@ -8,5 +8,5 @@ const titre = () => {
     </div>
   )
 }
-
+  
 export default titre;
