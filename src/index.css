@@ -6,11 +6,22 @@
   --error: #f53030;
 }
 
+
+
 body {
   font-family: "Playfair Display";
   color: var(--secondary);
-
 }
+
+.share {
+  margin-bottom:1000px
+}
+
+.Banner {
+  width: 100%;
+  height: 310px;
+}
+
 .App{
   max-width: 960px;
   margin: 0 auto;

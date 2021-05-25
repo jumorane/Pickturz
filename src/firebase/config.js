@@ -1,16 +1,41 @@
 import firebase from 'firebase/app'
  import 'firebase/storage';
  import 'firebase/firestore';
- 
+ import 'firebase/auth';
+
  // Config firebase Web 
  var firebaseConfig = {
-    apiKey: "AIzaSyDPStftLPHXcp1FoHMZPqv7mhxP6qC5aDA",
-    authDomain: "galleryproject-444ba.firebaseapp.com",
-    projectId: "galleryproject-444ba",
-    storageBucket: "galleryproject-444ba.appspot.com",
-    messagingSenderId: "591466862698",
-    appId: "1:591466862698:web:95e8d9136402c6dc4f1213"
+  apiKey: "AIzaSyAmYZyv5nXgtx3FV-89n0WX712ncWcPHdU",
+  authDomain: "gall-c9e88.firebaseapp.com",
+  databaseURL: "https://gall-c9e88-default-rtdb.firebaseio.com/",
+  projectId: "gall-c9e88",
+  storageBucket: "gall-c9e88.appspot.com",
+  messagingSenderId: "846742037519",
+  appId: "1:846742037519:web:900a2f326134b70886ef7a",
+  measurementId: "G-LCD2YK55QE"
   };
+
+  
+class Firebase {
+    //constructor () {
+     // app.initializeApp(config);
+      //this.auth = app.auth();
+    //}
+    
+    //inscription
+    signupUser = (email, password) =>
+    this.auth.createUserWithEmailAndPassword(email, password)
+   
+    //Connexion
+    loginUser = (email, password) =>
+    this.auth.signInWithEmailAndPassword(email, password)
+
+    //Déconnexion
+    signoutUser =() => this.auth.signOut()
+
+  }
+
+ 
  // Initialisation firebase
 firebase.initializeApp(firebaseConfig);
 
